@@ -1,6 +1,6 @@
-# Repo Template
+# Node Template
 
-> A Basic GitHub Repository Template
+> A Repository Template for `NodeJS` Projects
 
 ---
 

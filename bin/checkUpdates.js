@@ -11,8 +11,6 @@
 const childProcess = require("child_process")
 const os = require("os")
 
-const { lookpath } = require('lookpath');
-
 const chalk = require('chalk');
 
 /***************
@@ -29,24 +27,6 @@ const err = chalk.bgRed.black;
  * * FUNCTIONS *
  ***************/
 
-// Node Check Updates command
-let ncuCmd = 'ncu --packageFile package.json & echo.';
-
-// Updates command
-let updatesCmd = 'updates & echo.';
-
-// Check if packages are installed globally else use npx
-(async () => {
-  // node-check-updates package
-  if (! await lookpath('ncu')) {
-    ncuCmd = 'npx ' + ncuCmd
-  }
-  // updates package
-  if (! await lookpath('updates')) {
-    updatesCmd = 'npx ' + updatesCmd
-  }
-})()
-
 /**
  * Check for outdated node modules
  */
@@ -57,9 +37,9 @@ log(info("\n Checking for Outdated Node Modules \n"));
   // TODO: Check yarn.lock exists else run `npm outdated`
   { command: "yarn outdated & echo." },
 
-  { command: ncuCmd },
+  { command: "npx -q npm-check-updates --packageFile package.json & echo." },
 
-  { command: updatesCmd }
+  { command: "npx -q updates & echo." }
 ]
   .filter(({ onlyPlatforms }) => !onlyPlatforms || onlyPlatforms.includes(os.platform()))
   .forEach(commandAndOptions => {

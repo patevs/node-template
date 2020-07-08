@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- *  bin/checkUpdates
+ *  bin/checkUpdates.js
  */
 
 const childProcess = require("child_process")
@@ -23,9 +23,9 @@ log(info("\n Checking for Outdated Node Modules \n"))
   // TODO: Check yarn.lock exists else run `npm outdated`
   { command: "yarn outdated & echo." },
 
-  { command: "ncu --packageFile package.json & echo." },
+  { command: "npx ncu --packageFile package.json & echo." },
 
-  { command: "updates & echo." }
+  { command: "npx updates & echo." }
 ]
   .filter(({ onlyPlatforms }) => !onlyPlatforms || onlyPlatforms.includes(os.platform()))
   .forEach(commandAndOptions => {

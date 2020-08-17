@@ -1,6 +1,6 @@
 {
   "name": "node-template",
-  "version": "1.10.0",
+  "version": "1.10.1",
   "description": "Repository Template for NodeJS Projects",
   "author": "PatEvs",
   "license": "MIT",
@@ -32,7 +32,11 @@
       "./node_modules/commitlint-config-gitmoji"
     ],
     "rules": {
-      "header-max-length": [0, "always", 80]
+      "header-max-length": [
+        0,
+        "always",
+        80
+      ]
     }
   }
 }

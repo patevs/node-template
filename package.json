@@ -26,17 +26,5 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
-  },
-  "commitlint": {
-    "extends": [
-      "./node_modules/commitlint-config-gitmoji"
-    ],
-    "rules": {
-      "header-max-length": [
-        0,
-        "always",
-        80
-      ]
-    }
   }
 }

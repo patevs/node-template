@@ -20,6 +20,7 @@
 .
 ├── bin
 │   └── checkUpdates.js  # Check for outdated npm modules
+├── .commitlintrc.json   # Commitlint configuration
 ├── .editorconfig        # Editor configuration
 ├── .gitignore           # Git ignore rules
 ├── .np-config.json      # Npm publish (np) configuration

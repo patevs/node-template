@@ -18,11 +18,13 @@
 
 ```md
 .
-├── .editorconfig       # Editor configuration
-├── .gitignore          # Git ignore rules
-├── .np-config.json     # Npm publish (np) configuration
+├── bin
+│   └── checkUpdates.js  # Check for outdated npm modules
+├── .editorconfig        # Editor configuration
+├── .gitignore           # Git ignore rules
+├── .np-config.json      # Npm publish (np) configuration
 ├── LICENSE
-├── package.json        # Npm package configuration
+├── package.json         # Npm package configuration
 └── README.md
 ```
 

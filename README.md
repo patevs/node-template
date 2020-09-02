@@ -20,13 +20,12 @@
 .
 ├── bin
 │   └── checkUpdates.js  # Check for outdated npm modules
-├── .commitlintrc.json   # Commitlint configuration
 ├── .editorconfig        # Editor configuration
 ├── .gitignore           # Git ignore rules
-├── .np-config.json      # Npm publish (np) configuration
-├── LICENSE
-├── package.json         # Npm package configuration
-└── README.md
+├── .np-config.json      # NPM publish (np) configuration
+├── LICENSE              # Project LICENSE
+├── package.json         # NPM package configuration
+└── README.md            # Project README
 ```
 
 ---

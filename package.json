@@ -24,20 +24,5 @@
     "husky": "^7.0.4",
     "np": "^7.6.1",
     "script-progress": "^1.0.5"
-  },
-  "commitlint": {
-    "extends": [
-      "gitmoji"
-    ],
-    "rules": {
-      "subject-empty": [
-        0,
-        "never"
-      ],
-      "type-empty": [
-        0,
-        "never"
-      ]
-    }
   }
 }
